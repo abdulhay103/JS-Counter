@@ -16,6 +16,17 @@ btns.forEach((btn)=>{
         }else{
             count = 0;
         }
+
+        //Functionality For Text Color
+        if(count<0){
+            value.style.color = "red";
+        }
+        if(count>0){
+            value.style.color = "Green"
+        }
+        if(count === 0){
+            value.style.color = "#000"
+        }
         value.textContent = count;
     })
 })
